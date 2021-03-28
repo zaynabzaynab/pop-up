@@ -1,0 +1,54 @@
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
+<link rel="stylesheet" href="onclick-form-popup.css">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="onclick-form-popup.js"></script>
+
+<div class="side-widget open">
+  <div class="inner">
+    <a class="btn btn-blue productCheckout" id="get-started">Get Started</a>
+  </div>
+</div>
+
+<div id="popup-container">
+  <div id="popup-window">
+    <div class="modal-content">
+      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>  
+      <a href="#" class="your-class"></a>
+      <div>
+        <div class="row text-center">
+          <h1>GET STARTED</h1>
+          <hr>
+          <p>Fill out the form below to get started today!</p>
+        </div>
+        <br>
+        <form action="" method="post" id="footer-form">
+          <div class="row">
+            <div class="col-md-6">
+              <input class="form-control" name="name" id="name" placeholder=" Name *" required>
+            </div>
+            <div class="col-md-6">
+              <input class="form-control" name="company" id="company" placeholder="Company Name *" required>
+            </div>
+          </div>
+          <br>
+          <div class="row">
+            <div class="col-md-6">
+              <input class="form-control" name="email" id="email" placeholder="Your Email *"required>
+            </div>
+            <div class="col-md-6">
+              <input class="form-control" name="phone" placeholder="Phone *" id="phone">
+              <br>
+            </div>
+          </div>
+          <center>
+            <input type="submit" class="btn btn-primary" value="Submit">
+          </center>
+        </form>
+        <br>
+      </div>
+    </div>
+  </div>
+</div>
