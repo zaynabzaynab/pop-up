@@ -1,16 +1,32 @@
 <!DOCTYPE html>
 <html>
+   <head>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
 <link rel="stylesheet" href="onclick-form-popup.css">
-<script>$("html").on("contextmenu",function(e){
-   return false;
-});
+<script type="text/javascript"> 
+function disableselect(e){  
+return false  
+}  
+
+function reEnable(){  
+return true  
+}  
+
+//if IE4+  
+document.onselectstart=new Function ("return false")  
+document.oncontextmenu=new Function ("return false")  
+//if NS6  
+if (window.sidebar){  
+document.onmousedown=disableselect  
+document.onclick=reEnable  
+}
 </script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <script src="onclick-form-popup.js"></script>
-
+   </head>
+   <body>
 <div class="side-widget open">
   <div class="inner">
     <a class="btn btn-blue productCheckout" id="get-started">Get Started</a>
@@ -57,4 +73,5 @@
     </div>
   </div>
 </div>
+   </body>
 </html>
